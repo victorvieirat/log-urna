@@ -15,8 +15,9 @@ for zip_file in "$zip_dir"/*.zip; do
         # Unzip the file
         unzip -q "$zip_file" -d "${zip_file%.zip}"
         rm  "${zip_file%.zip}"/*.imgbu
-    fi 
-    
+        rm  "${zip_file%.zip}"/*.vscmr
+        rm  "${zip_file%.zip}"/*.bu
+    fi  
 done
 
 echo "All zip files in '$zip_dir' have been unzipped."
