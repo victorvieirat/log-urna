@@ -1,0 +1,18 @@
+version: '3'
+services:
+  anaconda:
+    image: continuumio/miniconda3:latest
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    command: > 
+       bash -c "echo 'hello world'
+       && apt update 
+       && yes | apt upgrade 
+       && yes | apt install default-jdk -y
+       && yes | conda install conda-forge::ipykernel
+       && yes | conda install conda-forge::pyspark
+       && yes | apt install unzip
+       && yes | apt install p7zip-full
+       && tail -f /dev/null"
