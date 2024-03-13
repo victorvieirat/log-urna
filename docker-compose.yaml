@@ -7,12 +7,14 @@ services:
     stdin_open: true
     tty: true
     command: > 
-       bash -c "echo 'hello world'
+       bash -c "echo 'Iniciando Projeto'
        && apt update 
        && yes | apt upgrade 
        && yes | apt install default-jdk -y
        && yes | conda install conda-forge::ipykernel
        && yes | conda install conda-forge::pyspark
+       && yes | conda install conda-forge::unidecode
        && yes | apt install unzip
        && yes | apt install p7zip-full
+       && yes | apt install coreutils
        && tail -f /dev/null"
