@@ -20,7 +20,7 @@ for zip_file in "$zip_dir"/*.zip; do
         rm  ${salvar_em}/*.vscmr
         rm  ${salvar_em}/*.bu
         rm  ${salvar_em}/*.rdv
-        find ${salvar_em}/ -type f ! -name 'o00406-18236001601*' -delete
+        #find ${salvar_em}/ -type f ! -name 'o00406-18236001601*' -delete
 
     fi
 done
