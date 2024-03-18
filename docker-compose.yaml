@@ -17,4 +17,5 @@ services:
        && yes | apt install unzip
        && yes | apt install p7zip-full
        && yes | apt install coreutils
+       && yes | conda install conda-forge::matplotlib
        && tail -f /dev/null"
