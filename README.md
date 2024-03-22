@@ -1,6 +1,8 @@
 # Análise dos Logs da Urna das Eleições de 2022 no Rio Grande do Norte
 
-![Boxplot de teclas indevidas pressionadas por eleitor com outlier](/img/box_com_outlier.jpg)
+![Distribuição de Teclas Erras Pressioandas por Eleitor](/img/hist_distribuicao_de_teclas_erradas_pressionadas_por_eleitor.jpg)
 
 
-![Boxplot de teclas indevidas pressionadas por eleitor sem outlier](/img/box_sem_outlier.jpg)
+![Gráfico de setores da prevalência de quantidade anormais de erros](/img/pie_prevalencia_do_eleitores_que_erraram_mais_de_20_teclas.jpg)
+
+![Distribuição do tempo de votação por eleitores](/img/box_distribuicao_de_tempo_de_votacao_por_eleitor.jpg)
